@@ -26,8 +26,8 @@ mongoose
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 });
-app.get("/",(req,res)=>{
-  res.send("Hello World")
+app.get("/", (req, res) => {
+  res.json("Hello World")
 })
 app.use(express.json());
 app.use(cookieParser());
