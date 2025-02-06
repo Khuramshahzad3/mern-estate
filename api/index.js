@@ -28,7 +28,7 @@ app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 });
 app.get("/", (req, res) => {
-  res.json("Hello World")
+  res.json("Hello World9")
 })
 app.use(express.json());
 app.use(cookieParser());
