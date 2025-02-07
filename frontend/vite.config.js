@@ -1,16 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [react()],
+  base: "/",  // Change to "./" only if needed
   server: {
     proxy: {
       "/api": {
         target: "https://mern-estate-api.vercel.app",
-        secure: false,
+        changeOrigin: true,
+        secure: true,  // Set to true for HTTPS
       },
     },
   },
-  plugins: [react()],
-  base: "./",
 });
