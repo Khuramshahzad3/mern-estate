@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "vercel-build": "chmod +x node_modules/.bin/vite && vite build",
+    "vercel-build": "vite build",
     "start": "vite preview",
-    "lint": "eslint ."
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
