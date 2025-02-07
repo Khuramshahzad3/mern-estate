@@ -12,7 +12,7 @@ dotenv.config();
 const PORT = 3000;
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://mern-estate-api.vercel.app'], // Replace with the frontend URL
+  origin:'*', // Replace with the frontend URL
   methods: 'GET, POST, PUT, DELETE', // Methods you want to allow
   allowedHeaders: 'Content-Type, Authorization', // Headers you want to allow
  // credentials: true, // Include cookies in the requests sent to the server
