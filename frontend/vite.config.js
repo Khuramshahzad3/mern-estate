@@ -12,5 +12,8 @@ export default defineConfig({
         secure: true,  // Set to true for HTTPS
       },
     },
+    build: {
+      outDir: "dist",
+    },
   },
 });
